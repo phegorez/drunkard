@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+
+@layer components {
+
+  .on-click {
+    @apply translate-y-4 ease-in-out duration-150
+  }
+
+  .on-click:hover {
+    @apply border-b-2 pb-2 border-[#8EFFC9]
+  }
+
+  .input {
+    @apply bg-[#202235] ml-3 rounded-md border-none focus:border-transparent focus:ring-0
+  }
+
+  .search-bar {
+    @apply flex items-center gap-2 bg-[#202235] rounded-md p-1
+  }
+
+  .nav {
+    @apply container mx-auto flex items-center justify-between
+  }
+
+  .ellipse {
+    background-image: linear-gradient(rgba(36, 38, 55, 1), rgba(40, 42, 58, 0));
+    height: 50px;
+    width: 20%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    @apply relative bottom-10 rounded-2xl opacity-20
+  }
+
+  .line {
+    /* Line 5 rotate-[-180deg] */
+    @apply w-full mt-20
+  }
+
+  .shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .review-section {
+    background: rgba(19, 21, 42, 1);
+    @apply flex flex-col py-20 px-64
+  }
+
+  /* Pagination */
+  .pagination ul li {
+    color: #fff;
+    list-style: none;
+    line-height: 45px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .pagination ul li.numb {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    margin: 0 3px;
+  }
+
+  .pagination ul li.dots {
+    font-size: 22px;
+    cursor: default;
+  }
+
+  .pagination ul li.btn {
+    padding: 0 10px;
+  }
+
+  .pagination ul li.prev {
+    border-radius: 25px 5px 5px 25px;
+  }
+
+  .pagination ul li.next {
+    border-radius: 5px 25px 25px 5px;
+  }
+
+  .pagination ul li.active,
+  .pagination ul li.numb:hover,
+  .pagination ul li.btn:hover {
+    color: #fff;
+    background: #45102B;
+  }
+
+  /* End Pagination */
+}

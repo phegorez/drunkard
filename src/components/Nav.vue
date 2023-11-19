@@ -15,7 +15,7 @@
             <li><a href="#" class="hover:text-gray-300 on-click">Contact</a></li>
         </ul>
 
-        <div class="font-bold text-[20px] relative lg:right-14 sm:right-13">
+        <div class="font-bold text-[20px] relative lg:left-[-2rem] sm:left-2">
             <span class="text-[#8EFFC9]">Drunkard</span> <span>Remiex</span>
         </div>
 

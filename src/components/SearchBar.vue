@@ -13,9 +13,13 @@
 <script setup>
 import { ref } from 'vue';
 const isSearchToggle = ref(false)
+const windowSize = ref(window.innerWidth)
 const toggleSearch = () => {
-    isSearchToggle.value = !isSearchToggle.value
+    if(windowSize.value <= 768) {
+        isSearchToggle.value = !isSearchToggle.value
+    }
 }
 
+console.log(windowSize.value)
 
 </script>

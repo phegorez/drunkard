@@ -1,5 +1,5 @@
 <template lang="">
-  <div>
+  <div class='overflow-hidden'>
     <Home />
     <Review />
     <TopMenu />

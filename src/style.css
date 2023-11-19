@@ -30,11 +30,11 @@
   }
 
   .nav {
-    @apply container mx-auto flex items-center justify-between sm:bg-[#13152A] lg:bg-transparent sm:py-4 sm:px-10
+    @apply w-full container mx-auto flex items-center justify-between sm:bg-[#13152A] lg:bg-transparent sm:py-4 sm:px-10
   }
 
   .hamburger-menu {
-    @apply lg:hidden
+    @apply lg:hidden cursor-pointer
   }
 
   .banner-image {

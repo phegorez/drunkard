@@ -1,7 +1,7 @@
 <template>
-    <section class="px-64 py-28 bg-black">
+    <section class="topMenu-section">
         <TopMenuHeader />
-        <div class="flex flex-col gap-8 justify-center items-center mt-32 px-72">
+        <div class="flex flex-col gap-8 justify-center items-center lg:mt-32 sm:mt-16 lg:px-0">
             <TopMenuCard />
             <Pagination />
         </div>

@@ -1,9 +1,9 @@
 <template>
-    <article class="bg-white flex flex-col items-center rounded-3xl">
-        <h2 class="mt-12 uppercase text-[#078080] text-[28px] font-extralight">Martini</h2>
-        <div class="flex flex-row px-24 py-10 gap-48">
-            <div class="w-full">
-                <img src="../assets/topmenucard.png" class="w-[18em] h-auto" alt="card-img">
+    <article class="bg-white flex flex-col items-center rounded-3xl max-w-5xl">
+        <h2 class="mt-12 uppercase text-[#078080] text-[1.75rem] font-extralight">Martini</h2>
+        <div class="flex lg:flex-row sm:flex-col lg:px-24 sm:px-8 py-10 xl:gap-48 lg:gap-40">
+            <div class="w-full flex justify-center sm:mb-10">
+                <img src="../assets/topmenucard.png" class="lg:w-[17rem] sm:w-28 h-auto" alt="card-img">
             </div>
             <div class="w-full">
                 <div class="mb-7">

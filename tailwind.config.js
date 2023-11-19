@@ -9,6 +9,15 @@ export default {
   ],
   theme: {
     extend: {},
+    screens: {
+      'sm': '389px',
+
+      'md': '767px',
+
+      'lg': '1439px',
+
+      'xl' : '1919px'
+    },
   },
   plugins: [
     require('flowbite/plugin')

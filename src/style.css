@@ -30,20 +30,24 @@
   }
 
   .nav {
-    @apply container mx-auto flex items-center justify-between
+    @apply container mx-auto flex items-center justify-between sm:bg-[#13152A] lg:bg-transparent sm:py-4 sm:px-10
   }
 
-  .ellipse {
-    background-image: linear-gradient(rgba(36, 38, 55, 1), rgba(40, 42, 58, 0));
-    height: 50px;
-    width: 20%;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    @apply relative bottom-10 rounded-2xl opacity-20
+  .hamburger-menu {
+    @apply lg:hidden
+  }
+
+  .banner-image {
+    @apply lg:w-72 sm:w-52 h-auto opacity-90 sm:ml-10
+  }
+
+  .banner-title {
+    @apply font-bold lg:text-[5rem] sm:text-[3.5rem] text-center relative bottom-48 shadow
   }
 
   .line {
     /* Line 5 rotate-[-180deg] */
-    @apply w-full mt-20
+    @apply w-full relative bottom-28
   }
 
   .shadow {
@@ -52,35 +56,52 @@
 
   .review-section {
     background: rgba(19, 21, 42, 1);
-    @apply flex flex-col py-20 px-64
+    @apply flex flex-col lg:py-20 xl:px-64 lg:px-20 sm:px-7 sm:py-14;
+  }
+
+  .review-section-quoat {
+    @apply font-bold text-white lg:text-[4rem] sm:text-[3rem] lg:leading-[6rem] mb-8
+  }
+
+  .review-section-buttons {
+    @apply flex lg:flex-row sm:flex-col lg:gap-8 sm:gap-4 lg:px-0 sm:px-16 mt-6
+  }
+  .review-section-button {
+    @apply bg-[#161B2E] gap-7 lg:px-8 lg:py-3 text-[#3DDEED]
+  }
+
+  .review-section-button-2 {
+    @apply gap-3 outline outline-[#202235] outline-1 lg:px-6 sm:px-5 sm:py-4 text-[18px] text-white
+  }
+
+  .review-section-button,
+  .review-section-button-2 {
+    @apply flex items-center lg:justify-start sm:justify-center sm:px-5 sm:py-4 text-[18px] rounded-sm
+  }
+
+  .topMenu-section {
+    @apply lg:py-28 sm:py-20 lg:px-20 xl:px-64 sm:px-6 bg-black
+  }
+
+  .faq-section {
+    @apply bg-[#13152A] items-center flex flex-col lg:py-56 sm:py-20 xl:px-72 lg:px-48 sm:px-4 md:px-20
   }
 
   /* Pagination */
   .pagination ul li {
-    color: #fff;
-    list-style: none;
-    line-height: 45px;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    @apply text-[#fff] leading-[2.813rem] list-none text-center lg:text-[1.125rem] sm:text-[0.9rem] font-medium cursor-pointer transition-all
   }
 
   .pagination ul li.numb {
-    border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    margin: 0 3px;
+    @apply rounded-[50%] h-[2.813rem] w-[2.813rem] mx-0 my-1
   }
 
   .pagination ul li.dots {
-    font-size: 22px;
-    cursor: default;
+    @apply lg:text-[1.375rem] sm:text-[1.125rem] cursor-default
   }
 
   .pagination ul li.btn {
-    padding: 0 10px;
+    @apply py-0 lg:px-2 sm:px-1
   }
 
   .pagination ul li.prev {
@@ -94,8 +115,7 @@
   .pagination ul li.active,
   .pagination ul li.numb:hover,
   .pagination ul li.btn:hover {
-    color: #fff;
-    background: #45102B;
+    @apply text-[#fff] bg-[#45102B]
   }
 
   /* End Pagination */

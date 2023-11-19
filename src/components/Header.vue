@@ -1,5 +1,5 @@
 <template>
-    <header class="pt-12 pb-20 px-20 bg-black text-white">
+    <header class="xl:pt-12 pb-20 xl:px-20 bg-black text-white">
         <Nav />
         <Banner />
     </header>
